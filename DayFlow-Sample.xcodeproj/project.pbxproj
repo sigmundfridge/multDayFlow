@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BADB5581904641FA88038DDD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5CABE39D4649BF84D5A610 /* libPods.a */; };
+		FC12D44F17542D9300829A57 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC12D44E17542D9300829A57 /* MainStoryboard.storyboard */; };
 		FC47032A1751862E0019AC73 /* DFMultipleDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4703291751862E0019AC73 /* DFMultipleDatePickerView.m */; };
 		FC47032D17518AB40019AC73 /* DFDatePickerMultipleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC47032C17518AB30019AC73 /* DFDatePickerMultipleViewController.m */; };
 		FF2A69EB172D31DE005A1A21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2A69EA172D31DE005A1A21 /* UIKit.framework */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		0C5CABE39D4649BF84D5A610 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8540EEC8EE4111873F3C74 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		FC12D44E17542D9300829A57 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		FC4703281751862D0019AC73 /* DFMultipleDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFMultipleDatePickerView.h; sourceTree = "<group>"; };
 		FC4703291751862E0019AC73 /* DFMultipleDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFMultipleDatePickerView.m; sourceTree = "<group>"; };
 		FC47032B17518AB30019AC73 /* DFDatePickerMultipleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFDatePickerMultipleViewController.h; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				FC47032B17518AB30019AC73 /* DFDatePickerMultipleViewController.h */,
 				FC47032C17518AB30019AC73 /* DFDatePickerMultipleViewController.m */,
+				FC12D44E17542D9300829A57 /* MainStoryboard.storyboard */,
 				FC4703281751862D0019AC73 /* DFMultipleDatePickerView.h */,
 				FC4703291751862E0019AC73 /* DFMultipleDatePickerView.m */,
 				FF2A69F9172D31DE005A1A21 /* DFSAppDelegate.h */,
@@ -172,6 +175,7 @@
 				FF2A69FD172D31DE005A1A21 /* Default.png in Resources */,
 				FF2A69FF172D31DE005A1A21 /* Default@2x.png in Resources */,
 				FF2A6A01172D31DE005A1A21 /* Default-568h@2x.png in Resources */,
+				FC12D44F17542D9300829A57 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

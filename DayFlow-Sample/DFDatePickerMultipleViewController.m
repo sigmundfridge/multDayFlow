@@ -33,7 +33,16 @@
     return _datePickerView;
 }
 
-- (void) handleGesture:(UIPanGestureRecognizer *)gestureRecognizer
+-(void) viewDidAppear:(BOOL)animated    {
+    [super viewDidAppear:animated];
+    UICollectionView *cv = self.datePickerView.collectionView;
+    NSIndexPath *cellIndexPath = [NSIndexPath indexPathForItem:([cv numberOfItemsInSection:(cv.numberOfSections / 2)] / 2) inSection:(cv.numberOfSections / 2)];
+    [self.datePickerView.collectionView scrollToItemAtIndexPath:cellIndexPath atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:NO];
+}
+
+
+/* Ignore all this, was trying to implement swipe-to-select, but it was messy and not that useful */
+/*- (void) handleGesture:(UIPanGestureRecognizer *)gestureRecognizer
 {
     float pointerX = [gestureRecognizer locationInView:self.datePickerView.collectionView].x;
     float pointerY = [gestureRecognizer locationInView:self.datePickerView.collectionView].y;
@@ -80,16 +89,16 @@
     [self.datePickerView collectionView:collection didDeselectItemAtIndexPath:indexPath];
 }
 
-
+*/
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    UIPanGestureRecognizer *gestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
+ //   UIPanGestureRecognizer *gestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
     //[self.view addGestureRecognizer:gestureRecognizer];
-    [gestureRecognizer setMinimumNumberOfTouches:1];
-    [gestureRecognizer setMaximumNumberOfTouches:1];
+ //   [gestureRecognizer setMinimumNumberOfTouches:1];
+ //   [gestureRecognizer setMaximumNumberOfTouches:1];
 }
 
 - (void)didReceiveMemoryWarning

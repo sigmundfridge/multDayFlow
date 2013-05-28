@@ -9,11 +9,11 @@
 @implementation DFSAppDelegate
 
 - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	DFDatePickerMultipleViewController *picker = [DFDatePickerMultipleViewController new];
-	picker.delegate = self;
-	self.window.rootViewController = picker;
-	[self.window makeKeyAndVisible];
+//	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//	DFDatePickerMultipleViewController *picker = [DFDatePickerMultipleViewController new];
+//	picker.delegate = self;
+//	self.window.rootViewController = picker;
+//	[self.window makeKeyAndVisible];
 	return YES;
 }
 
